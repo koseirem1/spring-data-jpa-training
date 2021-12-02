@@ -50,6 +50,7 @@ public class StudentController {
             resultList =this.studentService.getByNameAndSurname(name,surname);
         }else if("nameorsurname".equals(searchCriteria)){
             resultList =this.studentService.getByNameOrSurname(name,surname);
+
         }
         return resultList;
     }
